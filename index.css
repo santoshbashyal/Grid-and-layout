@@ -1,0 +1,35 @@
+*{margin: 0;
+padding: 0;}
+
+.container{
+    height: 60vh;
+    display: grid;
+    background-color: yellow;
+    grid-gap: 2px;
+    /* This creates the 9 columns, and each column should take up an equal portion of the available horizontal space, represented by 1fr. The fr unit stands for "fractional unit," and it divides the available space equally among the specified number of columns. */
+
+/* So, with this CSS code, you're creating a grid container with 9 columns, each of equal width. This can be useful for creating grid-based layouts where you want to divide the available horizontal space into 9 equal parts, allowing you to organize content, navigation menus, or other elements in a grid format. */
+    grid-template-columns: repeat(9, 1fr);
+    /* grid-template-rows:repeat(1, 1 fr); */
+    /* justify-content: center;
+    align-content: center; */
+    /* grid-row: 1/5; */
+}
+.item{
+    background-color: aqua;
+    border: 2px solid red;
+    /* grid-column: 1/5; */
+}
+
+@media  screen  and (max-width: 1500px){
+    .container{
+        background-color: black;
+    }
+    
+}
+@media  screen  and (max-width: 1000px){
+    .container{
+        background-color: brown;
+    }
+    
+            }
